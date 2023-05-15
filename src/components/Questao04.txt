@@ -1,0 +1,4 @@
+A utilização de Context ajuda a evitar que precisemos passar props para níveis inferiores da árvore de componentes.
+Por exemplo se temos um elemento Box com três componentes filhos Text e a gente queira passar uma 
+propriedade de Box para seus filhos ao invés de passarmos um prop para cada filho podemos apenas usar o Context e acessa-lo 
+diretamente no componente Text sem a necessidade de passar props.
