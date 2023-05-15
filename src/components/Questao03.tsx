@@ -26,18 +26,21 @@ const Questao03 = () => {
   }, []);
 
   return (
-    <div>
+    <div
+      style={{
+        background: "hsl(0, 0%, 10%)",
+        borderRadius: "10px",
+        margin: "10px 0",
+        padding: "5px 30px",
+      }}>
       {nums.length > 0 ? (
         <div>
           {/* mostra a capital e a população do maior */}
-          <h1>
-            maior: {nums[0].capital} - {nums[0].population}
-          </h1>
-
-          {/* mostra a capital e a população do menor */}
-          <h1>
+          <h2>
+            maior: {nums[0].capital} - {nums[0].population} <br />
+            {/* mostra a capital e a população do menor */}
             menor: {nums[1].capital} - {nums[1].population}
-          </h1>
+          </h2>
         </div>
       ) : (
         <div></div>

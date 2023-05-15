@@ -38,7 +38,13 @@ function Questao01X() {
   const [state, update] = useState([]);
 
   return (
-    <div>
+    <div
+      style={{
+        background: "hsl(0, 0%, 10%)",
+        borderRadius: "10px",
+        margin: "10px 0",
+        padding: "10px 0",
+      }}>
       {/* componente filho  */}
       <Questão01Y alunos={alunos} update={update}></Questão01Y>
       {/* filtra e mapeia o vetor com as medias e retorna um elemento que mostra o nome e a media do aluno */}
