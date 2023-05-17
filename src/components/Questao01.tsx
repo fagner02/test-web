@@ -31,7 +31,7 @@ function Questao01X() {
   const alunos = [
     { nome: "Sicrano", notas: { ap1: 8.4, ap2: 5.4 } },
     { nome: "Beltrano", notas: { ap1: 6.7, ap2: 3.5 } },
-    // { nome: "Fulano", notas: { ap1: 7.3, ap2: 9.2 } },
+    { nome: "Fulano", notas: { ap1: 7.3, ap2: 9.2 } },
   ];
 
   // criar estado para guardar as medias de cada aluno em um vetor
