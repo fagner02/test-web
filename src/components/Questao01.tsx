@@ -48,13 +48,15 @@ function Questao01X() {
       {/* componente filho  */}
       <Questão01Y alunos={alunos} update={update}></Questão01Y>
       {/* filtra e mapeia o vetor com as medias e retorna um elemento que mostra o nome e a media do aluno */}
-      {state
-        .filter((x) => x >= 7.0)
-        .map((x: any, i: number) => (
+      {state.map((x: any, i: number) => {
+        return x >= 7.0 ? (
           <div key={x}>
             {alunos[i].nome} - {x}
           </div>
-        ))}
+        ) : (
+          <div></div>
+        );
+      })}
     </div>
   );
 }
