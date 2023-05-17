@@ -31,7 +31,7 @@ function Questao01X() {
   const alunos = [
     { nome: "Sicrano", notas: { ap1: 8.4, ap2: 5.4 } },
     { nome: "Beltrano", notas: { ap1: 6.7, ap2: 3.5 } },
-    { nome: "Fulano", notas: { ap1: 7.3, ap2: 9.2 } },
+    // { nome: "Fulano", notas: { ap1: 7.3, ap2: 9.2 } },
   ];
 
   // criar estado para guardar as medias de cada aluno em um vetor
@@ -49,13 +49,12 @@ function Questao01X() {
       <Questão01Y alunos={alunos} update={update}></Questão01Y>
       {/* filtra e mapeia o vetor com as medias e retorna um elemento que mostra o nome e a media do aluno */}
       {state.map((x: any, i: number) => {
-        return x >= 7.0 ? (
-          <div key={x}>
-            {alunos[i].nome} - {x}
-          </div>
-        ) : (
-          <div></div>
-        );
+        if (x >= 7.0)
+          return (
+            <div key={x}>
+              {alunos[i].nome} - {x}
+            </div>
+          );
       })}
     </div>
   );
