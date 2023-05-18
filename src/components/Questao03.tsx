@@ -27,6 +27,7 @@ const Questao03 = () => {
 
   return (
     <div
+      className="hover-effect"
       style={{
         background: "hsl(0, 0%, 10%)",
         borderRadius: "10px",
@@ -36,11 +37,13 @@ const Questao03 = () => {
       {nums.length > 0 ? (
         <div>
           {/* mostra a capital e a população do maior */}
-          <h2>
-            maior: {nums[0].capital} - {nums[0].population} <br />
+          <p style={{ fontFamily: "monospace" }}>
+            maior população: {nums[0].capital.toString().toLowerCase()} -{" "}
+            {nums[0].population} <br />
             {/* mostra a capital e a população do menor */}
-            menor: {nums[1].capital} - {nums[1].population}
-          </h2>
+            menor população: {nums[1].capital.toString().toLowerCase()} -{" "}
+            {nums[1].population}
+          </p>
         </div>
       ) : (
         <div></div>

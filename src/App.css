@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+p,
+div {
+  font-size: 1rem;
+}
+
+img {
+  object-fit: cover;
+}
+
+.hover-effect {
+  transition: box-shadow 0.5s;
+  box-shadow: -0px -0px hsl(150, 80%, 60%, 0%), 0px 0px hsl(250, 80%, 60%, 0%);
+}
+.hover-effect:hover {
+  box-shadow: -10px -10px 20px hsl(150, 80%, 60%, 50%),
+    10px 10px 20px hsl(250, 80%, 60%, 50%);
+}

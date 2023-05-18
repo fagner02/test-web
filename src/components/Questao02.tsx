@@ -7,7 +7,22 @@ const Questao02X = () => {
   return (
     <div style={{ display: "flex" }}>
       {/* botao atualiza o valor do front quando clica */}
-      <button onClick={() => setFront((x) => !x)}>*</button>
+      <button
+        onClick={() => setFront((x) => !x)}
+        style={{ padding: "8px 5px" }}
+        className="hover-effect">
+        <p
+          style={{
+            writingMode: "vertical-lr",
+            textOrientation: "upright",
+            margin: "0",
+            fontFamily: "monospace",
+            letterSpacing: "-2px",
+            fontSize: "smaller",
+          }}>
+          VIRAR
+        </p>
+      </button>
       {/* se for front mostra a frente */}
       {front ? (
         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"></img>

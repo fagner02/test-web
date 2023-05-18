@@ -39,6 +39,7 @@ function Questao01X() {
 
   return (
     <div
+      className="hover-effect"
       style={{
         background: "hsl(0, 0%, 10%)",
         borderRadius: "10px",
@@ -51,8 +52,8 @@ function Questao01X() {
       {state.map((x: any, i: number) => {
         if (x >= 7.0)
           return (
-            <div key={x}>
-              {alunos[i].nome} - {x}
+            <div key={x} style={{ fontFamily: "monospace" }}>
+              {alunos[i].nome.toLowerCase()} - {x}
             </div>
           );
       })}
