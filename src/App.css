@@ -47,6 +47,9 @@ div {
 
 img {
   object-fit: cover;
+  background: hsl(0, 0%, 10%);
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
 .hover-effect {
